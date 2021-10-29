@@ -136,45 +136,50 @@
     width: 100vw;
     height: 116px;
     position: absolute;
-    bottom: 65px;
+    bottom: 70px;
     border: 3px solid turquoise;
     line-height: 116px;
     text-align: center;
-    /* padding: auto; */
 }
 .page1-symbol-line{
     width: 640px;
-    height: 66px;
-    overflow: hidden;
+    height: 116px;
     text-align: center;
-    align-items: center;
     border: 3px solid yellow;
+    line-height: 116px;
+    margin: auto;
 }
-.upper-line{
-    overflow: auto;
+.page1-symbol-line ul{
     list-style: none;
-    /* display: inline; */
-    width: 500px;
-    height: 66px;
-    border: 3px solid orange;
+    line-height: 116px;
 }
-.upper-line li{
-    float: left;
+.page1-symbol-line ul li{
     width: 120px;
-    height: 66px;
-    border: 3px solid red;
-    z-index: 3;
-}
-.speedometer-svg{
-    width: 40px;
-    height: 21px;
-    border: 3px solid turquoise;
-}
-.bottom-line li{
+    height: 86px;
     float: left;
-    border: 3px solid blue;
+    margin: 0 10px;
+    font-weight: lighter;
+}
+.page1-symbol-line-header{
+    width: 120px;
+    height: 36px;
+    font-size: 24px;
+}
+
+.page1-symbol-line-text{
     width: 120px;
     height: 17.6px;
+    font-size: 12px;
+}
+.page1-symbol-line ul:nth-child(0){
+    width: 170px;
+}
+.page1-symbol-line svg{
+    width: 60px;
+    height: 32px;
+}
+.page1-symbol-line input{
+    
 }
 .next-arrow{
     width: 70px;
@@ -183,6 +188,4 @@
     bottom: 0px;
     border: 3px solid green;
     margin: 0px auto;
-}
-
-/* page1-symbol-line-block */
+} 
