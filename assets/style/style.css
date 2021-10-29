@@ -43,16 +43,15 @@
     background-image: url(../imgs/M3-Hero-LHD-US-D.jpg); 
     background-position: top right;
     background-position-y: -100px;
-    /* overflow: hidden; */
     background-size: cover;
-    font-weight: 500;
-    color: white;
     font-family: 'gothamSSM';
+    font-weight: 500;
+    font-size: medium;
+    color: white;
 }
 .container1 a{
     text-decoration: none;
     color: inherit;
-    /* display: inline-block; */
 }
 .container1 header{
     height: 54px;
@@ -61,7 +60,6 @@
 .navbar1 {
     justify-content: center;
     text-align: center;
-    border: 1px solid violet;
 }
 /* center nav bar */
 .center-navbar{
@@ -79,7 +77,6 @@
 .navbar1 a, input{
     width: 122.6px;
     padding: 4px 8px;
-    border: 1px solid violet;
     line-height: 21px;
     font-size: 14px;
     font-weight: 400;
@@ -100,8 +97,11 @@
     width: 1536px;
     height: 48px;
     margin: 5 auto 0;
+    padding-right: 150px;
     line-height: 48px;
     text-align: center;
+    font-weight: normal;
+    font-size: x-large;
 }
 
 /* Banners nav bar */
@@ -109,12 +109,39 @@
     width: fit-content;
     height: 100vh;
     position: fixed;
-    padding-top: 200px;
-    margin-left: 20px;
+    padding-top: 180px;
+    margin-left: 10px;
 }
 .banners-list{
     list-style: none;
-    border-left: 3px solid #424A57;
-    margin: 5px 0px;
-    padding: 0px 10px;
+    list-style-position: inside;
+    margin-left: 5px;
+    line-height: 25px;
+    cursor: pointer;
+} 
+.banners-list li{
+    padding-left: 5px;
+    border-left: 1px solid #7e8189;
+    color: transparent;
+    font-size: 7px;
+    font-weight: lighter;
+    cursor: pointer;
+    margin: 5px 0;
+}
+.banners-list :nth-child(1){
+    border-left: 3px solid white;
+}
+/* page 1 bottom */
+.bottom1{
+    width: 640px;
+    height: 116px;
+    margin: 0 auto;
+    border: 3px solid turquoise;
+    display: inline;
+}
+.page1-symbol-line{
+
+}
+.upper-line{
+    
 }
