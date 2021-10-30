@@ -63,6 +63,19 @@
     border-radius: 15px;
     cursor: pointer;
 }
+.jump-top{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 48px;
+    width: 48px;
+    font-size: 28px;
+    font-weight: bolder;
+    margin-right: 20px;
+    line-height: 48px;
+    text-align: center;
+    padding-top: 8px;
+}
 
 /* ******************************************** */
 /* Banner 1 */
@@ -335,7 +348,7 @@
 /* banner 2 button line */
 /* ******************************************** */
 .banner-buttons{
-    height: 240px;
+    height: 160px;
     margin-top: 16px;
     padding: 48px 0px;
     font-size: 14px;
@@ -346,12 +359,12 @@
 .safty-learn-more{
     width: 136px;
     height: 40px;
-    /* padding-top: 10px; */
     margin-right: 12px;
     line-height: 40px;
     font-weight: 500;
     float: left;
     cursor: pointer;
+    text-align: center;
 }
 .safty-learn-more-btn{
     height: 32px;
@@ -394,14 +407,13 @@
     position: absolute;
     top: 0px;
     bottom: -100px;
-    right: 140px;
+    right: 150px;
     height: 100vh;
-    width: 1003px;
+    width: 1000px;
     padding-top: 100px;
     z-index: -1;
     background-image: url(../imgs/model_3_safety_hero.png);  
     background-position: top right;
-    background-position-y: -100px;
     background-size: cover;
 }
 
@@ -410,3 +422,130 @@
 /* ******************************************** */
 /* banner 3 */
 /* ******************************************** */
+
+.container3{
+    width: 100vw;
+    height: 70%;
+    font-family: "gothamSSM";
+    font-weight: 500;
+}
+/* ******************************************** */
+/* banner 3 - top section */
+/* ******************************************** */
+.banner3-top-section{
+    /* width: 100vw; */
+    height: 72vh;
+    background-image: url(../imgs/lhd-performance-hero-desktop.jpg);  
+    background-size: cover;
+    background-position: top right;
+    background-position-y: -1040px;
+}
+.banner3-top-section-symbols{
+    position: absolute;
+    width: 900px;
+    height: 100px;
+    bottom: 217px;
+    left: 50%;
+    transform: translateX(-50%);    
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+.banner3-top-section-symbols-mp{
+    height: 84px;
+    width: 250px;
+    margin: 0px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+.banner3-top-section-symbols-mp svg{
+    width: 40px;
+    height: 28px;
+    line-height: 28px;
+    /* display: inline-block; */
+    float: left;
+    margin-top: 5px; 
+    margin-left: 80px;
+}
+.banner3-top-symbols-line-top{
+    width: 250px;
+    height: 36px;
+    line-height: 36px;
+    font-family: "Gotham Medium";
+    text-align: center;
+    font-size: 22px;
+}
+.banner3-top-symbols-line-bottom{
+    width: 240px;
+    height: 36px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+}
+.banner3-top-symbols-line-left{
+    padding: 0px 80px;
+}
+.banner3-top-symbols-line-mid{
+    
+}
+.banner3-top-symbols-line-right{
+    width: 280px;
+}
+/* ******************************************** */
+/* banner 3 - bottom section - left*/
+/* ******************************************** */
+.banner3-bottom-section{
+    bottom: 0px;
+    width: 100vw;
+    height: 200px;
+    padding: 0px auto;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgb(57, 60, 65);
+    padding: 36px 0px 36px 450px;
+    text-align: left;
+}
+.banner3-bottom-section-left{
+    width: 301px;
+    height: 105px;
+    padding: 0px;
+    padding-top: 0px;
+    padding-right: 16px;
+    float: left;
+}
+.banner3-sub-header{
+    font-size: 15px;
+    font-weight: 500;
+    counter-reset: rgb(24, 27, 33);
+}
+.banner3-header{
+    font-size: 28px;
+}
+.banner3-buttons{
+    height: 40px;
+    padding: 0px;
+    padding-right: 33px;
+    color: rgb(57, 60, 65);
+    text-align: left;
+}
+.banner3-learn-more{
+    width: 120px;
+}
+
+/* ******************************************** */
+/* banner 3 - bottom section - right*/
+/* ******************************************** */
+.banner3-bottom-section-right{
+    width: 624px;
+    display: inline-block;
+}
+.banner3-bottom-section p{
+    height: 105px;
+    padding-right: 10px;
+    padding-bottom: 16px;
+    font-size: 14px;
+}
