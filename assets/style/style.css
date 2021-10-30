@@ -1,6 +1,11 @@
+/* ******************************************** */
 /* Style sheet for weekend 1 assignment - Tesla */
+/* ******************************************** */
 
+
+/* ******************************************** */
 /* Fonts */
+/* ******************************************** */
 @font-face{
     font-family: 'gothamSSM';
     src: 
@@ -10,7 +15,10 @@
         url('../fonts/GothamSSm-Medium_Web.woff2') format('woff2');
 }
 
+
+/* ******************************************** */
 /* Global */
+/* ******************************************** */
 *{
     margin: 0px;
     padding: 0px;
@@ -43,8 +51,22 @@
     transition-property: background-color;
     transition-timing-function: ease, ease, ease;
 }
+.order-now-btn{
+    padding: 4px 24px;
+    font-size: 12px;
+    line-height: 14.5px;
+    text-align: center;
+    color: rgb(57, 60, 65);   
+    background-color: transparent;
+    text-decoration-style: solid;
+    border: 3px solid rgb(24, 27, 33);
+    border-radius: 15px;
+    cursor: pointer;
+}
 
+/* ******************************************** */
 /* Banner 1 */
+/* ******************************************** */
 .container1{
     height: 100vh;
     width: 100vw;
@@ -60,6 +82,12 @@
 .container1 a{
     text-decoration: none;
     color: inherit;
+    transition-delay: 0s, 0s, 0s;
+    transition-duration: 0.33s, 0.33s, 0.33s;
+    transition-property: color;
+    transition-property: border-color;
+    transition-property: background-color;
+    transition-timing-function: ease, ease, ease;
 }
 .container1 a:hover{
     background-color: #6c7380;
@@ -73,7 +101,9 @@
     justify-content: center;
     text-align: center;
 }
+/* ******************************************** */
 /* center nav bar */
+/* ******************************************** */
 .center-navbar{
     width: 1009px;
     position: absolute;
@@ -105,8 +135,9 @@
     background-color: #6c7380;
     border-radius: 10px;
 }
-
+/* ******************************************** */
 /* Banner Headline */
+/* ******************************************** */
 .main-headline{
     position: absolute;
     top: 100px;
@@ -119,8 +150,9 @@
     font-weight: normal;
     font-size: x-large;
 }
-
+/* ******************************************** */
 /* Banners nav bar */
+/* ******************************************** */
 .vert-navbar{
     width: fit-content;
     height: 100vh;
@@ -150,73 +182,52 @@
 .banners-list li:hover{
     color: white;
 }
+/* ******************************************** */
 /* banner 1 bottom */
-.bottom1{
-    width: 100vw;
-    height: 116px;
+/* ******************************************** */
+.banner1-bottom-container{
+    width: auto;
     position: absolute;
-    bottom: 70px;
-    border: 3px solid turquoise;
-    line-height: 116px;
+    bottom: 100px;
+    left:50%;
+    transform: translateX(-50%);
+    color: white;
 }
-.banner1-symbol-line{
-    width: 640px;
-    height: 116px;
-    /* justify-content: center; */
-    /* text-align: center; */
-    border: 3px solid yellow;
-    line-height: 116px;
-    margin: auto;
-    /* display: inline-block; */
-}
-.banner1-symbol-line ul{
-    width: 480px;
-    height: 116px;
-    list-style: none;
-    line-height: 116px;
-    /* float: left; */
-}
-.banner1-symbol-line ul li{
-    width: 120px;
-    height: 116px;
+.banner1-bottom-container-mp{
+    vertical-align: bottom;
     display: inline-block;
+    padding: 5px 10px;
     margin: 0 10px;
-    font-weight: lighter;
-    /* float: left; */
 }
-.banner1-symbol-line-header{
-    width: 120px;
-    height: 80px;
-    font-size: 24px;
+.banner1-bottom-container-mp svg{
+    width: 40px;
+    height: 21px;
+    display: inline-block;
+}
+.banner1-bottom-btn{
+    width: 160px;
+    margin-bottom: 10px;
+    color: white;
+    border-color: white;
 }
 
-.banner1-symbol-line-text{
-    width: 120px;
-    height: 36px;
-    font-size: 12px;
-}
-.banner1-symbol-line ul:nth-child(0){
-    /* width: 170px; */
-}
-.banner1-symbol-line svg{
-    width: 60px;
-    height: 32px;
-}
-.banner1-symbol-line input{
-    border: 3px solid white;
-    border-radius: 15px;
-}
 .next-arrow{
-    /* width: 70px;
+    width: 70px;
     height: 70px;
     position: absolute;
     bottom: 0px;
-    border: 3px solid green;
-    color: yellowgreen;
-    margin: 0px auto; */
+    left:50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 48px;
+    font-weight: bolder;
+    padding: 0px;
 } 
 
+
+/* ******************************************** */
 /* Banner 2 - shortend*/
+/* ******************************************** */
 .container2{
     height: 100vh;
     width: 100vw;
@@ -235,7 +246,9 @@
     padding: 54px 50px 48px;
     display: inline-block;
 }
+/* ******************************************** */
 /* header */
+/* ******************************************** */
 .banner-sub-header{
     height: 17px;
     font-family: "Gotham Light";
@@ -264,6 +277,9 @@
     line-height: 21px;
     color: rgb(57, 60, 65);
 }
+/* ******************************************** */
+/* banner 2 table */
+/* ******************************************** */
 .page2-table-container{
     height: 247px;
     padding: 24px;
@@ -315,6 +331,9 @@
     line-height: normal;
     text-align: left;
 }
+/* ******************************************** */
+/* banner 2 button line */
+/* ******************************************** */
 .banner-buttons{
     height: 240px;
     margin-top: 16px;
@@ -357,26 +376,20 @@
     font-style: normal;
     font-weight: lighter;
 }
-.order-now-btn{
+
+.banner2-order-now-btn{
     float: right;
     width: 120px;
     height: 26px;
-    padding: 4px 24px;
-    font-size: 12px;
-    line-height: 14.5px;
-    text-align: center;
-    color: rgb(57, 60, 65);   
-    background-color: transparent;
-    text-decoration-style: solid;
-    border-color: rgb(24, 27, 33);
-    border-radius: 15px;
-    cursor: pointer;
 }
-.order-now-btn:hover{
+.banner2-order-now-btn:hover{
     color: white;
     background-color: black;
     cursor: pointer;
 }
+/* ******************************************** */
+/* Banner 2 image */
+/* ******************************************** */
 .banner2-img{
     position: absolute;
     top: 0px;
@@ -391,3 +404,9 @@
     background-position-y: -100px;
     background-size: cover;
 }
+
+
+
+/* ******************************************** */
+/* banner 3 */
+/* ******************************************** */
