@@ -3,9 +3,10 @@
 /* Fonts */
 @font-face{
     font-family: 'gothamSSM';
-    src: url('../fonts/GothamSSm-Bold_Web.woff2') format('woff2'),
-        url('../fonts/GothamSSm-Book_Web.woff2') format('woff2'),
+    src: 
         url('../fonts/GothamSSm-Light_Web.woff2') format('woff2'),
+        url('../fonts/GothamSSm-Bold_Web.woff2') format('woff2'),
+        url('../fonts/GothamSSm-Book_Web.woff2') format('woff2'),
         url('../fonts/GothamSSm-Medium_Web.woff2') format('woff2');
 }
 
@@ -26,7 +27,6 @@
     font-size: 40px;
 }
 .logo span{
-    
     display: block;
     width: 120px;
     height: 30px;
@@ -34,6 +34,14 @@
 }
 .logo a{
     fill: white;
+}
+.animation{
+    transition-delay: 0s, 0s, 0s;
+    transition-duration: 0.33s, 0.33s, 0.33s;
+    transition-property: color;
+    transition-property: border-color;
+    transition-property: background-color;
+    transition-timing-function: ease, ease, ease;
 }
 
 /* Banner 1 */
@@ -68,7 +76,6 @@
 /* center nav bar */
 .center-navbar{
     width: 1009px;
-    /* padding: 0px 8px; */
     position: absolute;
     left: 245px;
 }
@@ -148,45 +155,48 @@
     width: 100vw;
     height: 116px;
     position: absolute;
-    top: calc(100% -70px);
+    bottom: 70px;
     border: 3px solid turquoise;
     line-height: 116px;
-    text-align: center;
 }
 .banner1-symbol-line{
     width: 640px;
     height: 116px;
-    justify-content: center;
-    text-align: center;
+    /* justify-content: center; */
+    /* text-align: center; */
     border: 3px solid yellow;
     line-height: 116px;
     margin: auto;
-    display: inline-block;
+    /* display: inline-block; */
 }
 .banner1-symbol-line ul{
+    width: 480px;
+    height: 116px;
     list-style: none;
     line-height: 116px;
+    /* float: left; */
 }
 .banner1-symbol-line ul li{
     width: 120px;
-    height: 86px;
-    float: left;
+    height: 116px;
+    display: inline-block;
     margin: 0 10px;
     font-weight: lighter;
+    /* float: left; */
 }
 .banner1-symbol-line-header{
     width: 120px;
-    height: 36px;
+    height: 80px;
     font-size: 24px;
 }
 
 .banner1-symbol-line-text{
     width: 120px;
-    height: 17.6px;
+    height: 36px;
     font-size: 12px;
 }
 .banner1-symbol-line ul:nth-child(0){
-    width: 170px;
+    /* width: 170px; */
 }
 .banner1-symbol-line svg{
     width: 60px;
@@ -197,23 +207,19 @@
     border-radius: 15px;
 }
 .next-arrow{
-    width: 70px;
+    /* width: 70px;
     height: 70px;
     position: absolute;
     bottom: 0px;
     border: 3px solid green;
     color: yellowgreen;
-    margin: 0px auto;
+    margin: 0px auto; */
 } 
 
 /* Banner 2 - shortend*/
 .container2{
     height: 100vh;
     width: 100vw;
-    /* background-image: url(../imgs/model_3_safety_hero.png);  */
-    /* background-position: top right; */
-    /* background-position-y: -100px; */
-    /* background-size: cover; */
     font-family: 'gothamSSM';
     font-weight: 500;
     font-size: medium;
@@ -224,35 +230,164 @@
     color: inherit;
 }
 .banner2-left-section{
-    width: 415px;
+    width: 373px;
     height: 100vh;
     padding: 54px 50px 48px;
+    display: inline-block;
 }
 /* header */
 .banner-sub-header{
     height: 17px;
     font-family: "Gotham Light";
-    font-size: 17px;
+    font-size: 15px;
     letter-spacing: -0.5px;
     line-height: 17px;
+    text-decoration: none;
+    font-style: normal;
 }
 .banner-header{
     height: 36px;
     margin: 2px 0px 4px;
     font-family: "Gotham Medium";
-    font-size: 28px;
+    font-size: 24px;
+    font-style: normal;
     letter-spacing: -0.5px;
     line-height: 36px;
     color: rgb(24, 27, 33);
 }
 .banner2-left-section p{
-    height: 184px;
+    height: 164px;
+    margin-bottom: 10px;
     padding-bottom: 16px;
     font-size: 12px;
     font-weight: 400;
     line-height: 21px;
     color: rgb(57, 60, 65);
 }
-.banner2-left-section table{
+.page2-table-container{
+    height: 247px;
+    padding: 24px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgb(57, 60, 65);
+    background-color: rgb(226, 228, 228);
+    border-radius: 15px;
+}
+.safety-table-header{
+    width: 267px;
+    height: 56px;
+    padding-bottom: 16px;
+    font-family: "Gotham Medium";
+    font-size: 18px;
+    letter-spacing: -0.4px;
+    line-height: 28px;
+    text-align: center;
+    color: rgb(24, 27, 33);
+}
+
+.safty-card-line-text{
+    width: 165px;
+    margin-right: 8px 8px 8px 0px;
+    text-align: left;
+}
+.safty-card-line-header{
+    height: 21px;
+    font-family: "Gotham Bold";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
     
+}
+.safty-card-line-subheader{
+    height: 8px;
+    font-family: "Gotham Book";
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 8px;
+}
+.safety-table-star-line{
+    height: 20px;
+    vertical-align: top;
+    font-family: "Gotham Medium";
+    font-size: 17px;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+}
+.banner-buttons{
+    height: 240px;
+    margin-top: 16px;
+    padding: 48px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    vertical-align: middle;
+}
+.safty-learn-more{
+    width: 136px;
+    height: 40px;
+    /* padding-top: 10px; */
+    margin-right: 12px;
+    line-height: 40px;
+    font-weight: 500;
+    float: left;
+    cursor: pointer;
+}
+.safty-learn-more-btn{
+    height: 32px;
+    width: 30px;
+    padding: 0px 4px;
+    background-color: white;
+    border:3px solid black;
+    border-radius: 50%;
+    box-shadow: transparent;
+    font-size: 28px;
+    text-align: left;
+}
+.safty-learn-more:hover > .safty-learn-more-btn{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.safty-learn-more span{
+    vertical-align: top;
+    line-height: 32px;    
+    font-size: 12px;
+    font-style: normal;
+    font-weight: lighter;
+}
+.order-now-btn{
+    float: right;
+    width: 120px;
+    height: 26px;
+    padding: 4px 24px;
+    font-size: 12px;
+    line-height: 14.5px;
+    text-align: center;
+    color: rgb(57, 60, 65);   
+    background-color: transparent;
+    text-decoration-style: solid;
+    border-color: rgb(24, 27, 33);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.order-now-btn:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.banner2-img{
+    position: absolute;
+    top: 0px;
+    bottom: -100px;
+    right: 140px;
+    height: 100vh;
+    width: 1003px;
+    padding-top: 100px;
+    z-index: -1;
+    background-image: url(../imgs/model_3_safety_hero.png);  
+    background-position: top right;
+    background-position-y: -100px;
+    background-size: cover;
 }
