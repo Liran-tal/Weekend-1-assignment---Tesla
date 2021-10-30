@@ -36,7 +36,7 @@
     fill: white;
 }
 
-/* Section 1 */
+/* Banner 1 */
 .container1{
     height: 100vh;
     width: 100vw;
@@ -143,17 +143,17 @@
 .banners-list li:hover{
     color: white;
 }
-/* page 1 bottom */
+/* banner 1 bottom */
 .bottom1{
     width: 100vw;
     height: 116px;
     position: absolute;
-    bottom: 70px;
+    top: calc(100% -70px);
     border: 3px solid turquoise;
     line-height: 116px;
     text-align: center;
 }
-.page1-symbol-line{
+.banner1-symbol-line{
     width: 640px;
     height: 116px;
     justify-content: center;
@@ -163,36 +163,36 @@
     margin: auto;
     display: inline-block;
 }
-.page1-symbol-line ul{
+.banner1-symbol-line ul{
     list-style: none;
     line-height: 116px;
 }
-.page1-symbol-line ul li{
+.banner1-symbol-line ul li{
     width: 120px;
     height: 86px;
     float: left;
     margin: 0 10px;
     font-weight: lighter;
 }
-.page1-symbol-line-header{
+.banner1-symbol-line-header{
     width: 120px;
     height: 36px;
     font-size: 24px;
 }
 
-.page1-symbol-line-text{
+.banner1-symbol-line-text{
     width: 120px;
     height: 17.6px;
     font-size: 12px;
 }
-.page1-symbol-line ul:nth-child(0){
+.banner1-symbol-line ul:nth-child(0){
     width: 170px;
 }
-.page1-symbol-line svg{
+.banner1-symbol-line svg{
     width: 60px;
     height: 32px;
 }
-.page1-symbol-line input{
+.banner1-symbol-line input{
     border: 3px solid white;
     border-radius: 15px;
 }
@@ -205,3 +205,54 @@
     color: yellowgreen;
     margin: 0px auto;
 } 
+
+/* Banner 2 - shortend*/
+.container2{
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url(../imgs/model_3_safety_hero.png);  */
+    /* background-position: top right; */
+    /* background-position-y: -100px; */
+    /* background-size: cover; */
+    font-family: 'gothamSSM';
+    font-weight: 500;
+    font-size: medium;
+    color: black;
+}
+.container2 a{
+    text-decoration: none;
+    color: inherit;
+}
+.banner2-left-section{
+    width: 415px;
+    height: 100vh;
+    padding: 54px 50px 48px;
+}
+/* header */
+.banner-sub-header{
+    height: 17px;
+    font-family: "Gotham Light";
+    font-size: 17px;
+    letter-spacing: -0.5px;
+    line-height: 17px;
+}
+.banner-header{
+    height: 36px;
+    margin: 2px 0px 4px;
+    font-family: "Gotham Medium";
+    font-size: 28px;
+    letter-spacing: -0.5px;
+    line-height: 36px;
+    color: rgb(24, 27, 33);
+}
+.banner2-left-section p{
+    height: 184px;
+    padding-bottom: 16px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgb(57, 60, 65);
+}
+.banner2-left-section table{
+    
+}
