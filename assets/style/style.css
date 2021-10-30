@@ -23,6 +23,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'gothamSSM'
 }
 .logo{
     position: fixed;
@@ -199,7 +200,7 @@
 .banners-list a{
     color: transparent;
     text-decoration: none;
-    border: 0px;
+    border-color: transparent;
 }
 
 .banners-list li:hover{
