@@ -25,6 +25,12 @@
     box-sizing: border-box;
     font-family: 'gothamSSM'
 }
+html{
+    scroll-behavior: smooth;
+}
+html, body {
+    scroll-snap-type: y mandatory;
+}
 .logo{
     position: fixed;
     width: 245px;
@@ -86,6 +92,7 @@
 /* Banner 1 */
 /* ******************************************** */
 .container1{
+    scroll-snap-align: start;
     height: 100vh;
     width: 100vw;
     background-image: url(../imgs/M3-Hero-LHD-US-D.jpg); 
@@ -203,7 +210,7 @@
     border-color: transparent;
 }
 
-.banners-list li:hover{
+.banners-list li:hover, a:hover{
     color: white;
 }
 /* ******************************************** */
@@ -260,6 +267,7 @@
 /* Banner 2 - shortend*/
 /* ******************************************** */
 .container2{
+    scroll-snap-align: start;
     height: 100vh;
     width: 100vw;
     font-family: 'gothamSSM';
@@ -442,8 +450,9 @@
 /* ******************************************** */
 
 .container3{
+    scroll-snap-align: start;
     width: 100vw;
-    height: 70%;
+    height: 100vh;
     font-family: "gothamSSM";
     font-weight: 500;
 }
